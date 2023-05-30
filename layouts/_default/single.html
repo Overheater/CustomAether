@@ -11,7 +11,7 @@
         </header>
         {{ with .Resources.GetMatch "featuredImage" -}}
         <picture class="post-figure">
-          {{ $featured := .Resize "711x Lanczos" }}
+          {{ $featured := .Resize "1422x Lanczos" }}
           {{ $featured_2 := .Resize "1422x Lanczos" }}
           {{ $featured_3 := .Resize "2133x Lanczos" }}
           <source srcset="{{ $featured.Permalink }} 1x, {{ $featured_2.Permalink }} 2x, {{ $featured_3.Permalink }} 3x">

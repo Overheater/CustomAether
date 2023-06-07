@@ -1,6 +1,9 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  {{if .IsHome}}
+  <meta name="google-site-verification" content="0NHUtHNkCnhi8nNk4Dj88A_HOzeO36vAjvEAm3wCd38" />
+  {{end -}}
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{{ if not .IsHome }}{{with .Title }}{{ . }} &middot; {{ end }}{{ end }}{{ .Site.Title }}</title>
   <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
